@@ -19,9 +19,9 @@
     <body>
         <header class="sticky-top">
             <nav
-                class="navbar navbar-expand-lg navbar-dark bg-black px-5 py-3 shadow-sm"
+                class="navbar navbar-expand-lg navbar-dark bg-black px-2 px-md-5 py-3 shadow-sm"
             >
-                <div class="container-fluid">
+                <div class="container-md">
                     <a class="navbar-brand me-5" href="/">
                         <img
                             id="logo"
@@ -287,15 +287,16 @@
         </header>
 
         <main>
-            <section class="position-relative banner">
+            <!-- Large Screen Banner -->
+            <section class="position-relative banner overflow-hidden d-none d-md-block">
                 <!-- Carousel -->
-                <div class="position-absolute top-0 start-0 z-0 t slider">
+                <div class="position-absolute top-0 start-0 z-0 slider w-100 h-100">
                     <div
                         class="carousel slide carousel-fade"
                         id="carouselExampleFade"
                         data-bs-ride="carousel"
                     >
-                        <div class="carousel-inner">
+                        <div class="carousel-inner w-100 h-100">
                             <div class="carousel-item active">
                                 <img
                                     src="images/landing1.webp"
@@ -335,27 +336,105 @@
                             </p>
                             <div class="row ms-0 flex-row gap-2 btn-wrapper">
                                 <div
-                                    class="btn btn-outline banner-btn col-3 py-3 px-4"
+                                    class="btn btn-outline banner-btn col-3 py-2 py-lg-3 px-4"
                                 >
                                     RestroGreen
                                 </div>
                                 <div
-                                    class="btn btn-outline banner-btn col-3 py-3 px-4"
+                                    class="btn btn-outline banner-btn col-3 py-2 py-lg-3 px-4"
                                 >
                                     RetailGo
                                 </div>
                                 <div
-                                    class="btn btn-outline banner-btn col-3 py-3 px-4"
+                                    class="btn btn-outline banner-btn col-3 py-2 py-lg-3 px-4"
                                 >
                                     OneOffice
                                 </div>
                                 <div
-                                    class="btn btn-outline banner-btn col-3 py-3 px-4"
+                                    class="btn btn-outline banner-btn col-3 py-2 py-lg-3 px-4"
                                 >
                                     LocoShop
                                 </div>
                                 <div
-                                    class="btn btn-outline banner-btn col-3 py-3 px-4"
+                                    class="btn btn-outline banner-btn col-3 py-2 py-lg-3 px-4"
+                                >
+                                    CourtSync
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Mobile Screen Banner -->
+             <section class="banner h-100 d-block d-md-none">
+                <!-- Carousel -->
+                <div class="slider w-100 h-100">
+                    <div
+                        class="carousel slide carousel-fade"
+                        id="carouselExampleFade"
+                        data-bs-ride="carousel"
+                    >
+                        <div class="carousel-inner w-100 h-100">
+                            <div class="carousel-item active">
+                                <img
+                                    src="images/landing1.webp"
+                                    class="d-block w-100"
+                                    alt="landing-image-1"
+                                />
+                            </div>
+                            <div class="carousel-item">
+                                <img
+                                    src="images/landing2.webp"
+                                    class="d-block w-100"
+                                    alt="landing-image-2"
+                                />
+                            </div>
+                            <div class="carousel-item">
+                                <img
+                                    src="images/landing3.webp"
+                                    class="d-block w-100"
+                                    alt="landing-image-3"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="container-md d-flex justify-content-center align-items-center banner-info-wrapper"
+                >
+                    <div class="row ms-md-0 justify-content-center">
+                        <div class="col d-flex flex-column align-content-center text-center">
+                            <h1 class="h1">
+                                POS and Business Management Solutions for
+                            </h1>
+                            <p class="">
+                                Restaurants, Retail, Online shops, ECommerce
+                                Platform and other SMEs.
+                            </p>
+                            <div class="row ms-0 flex-row gap-2 btn-wrapper justify-content-center">
+                                <div
+                                    class="btn btn-outline banner-btn col col-md-3 py-2 px-md-4 px-3"
+                                >
+                                    RestroGreen
+                                </div>
+                                <div
+                                    class="btn btn-outline banner-btn col col-md-3 py-2 px-md-4 px-3"
+                                >
+                                    RetailGo
+                                </div>
+                                <div
+                                    class="btn btn-outline banner-btn col col-md-3 py-2 px-md-4 px-3"
+                                >
+                                    OneOffice
+                                </div>
+                                <div
+                                    class="btn btn-outline banner-btn col col-md-3 py-2 px-md-4 px-3"
+                                >
+                                    LocoShop
+                                </div>
+                                <div
+                                    class="btn btn-outline banner-btn col col-md-3 py-2 px-md-4 px-3"
                                 >
                                     CourtSync
                                 </div>
@@ -368,7 +447,7 @@
             <section class="solution-section">
                 <div class="container py-5 text-center">
                     <div class="row">
-                        <h3 class="h3 pb-4">One Solution for All</h3>
+                        <h2 class="h2 pb-4">One Solution for All</h2>
                         <p class="">
                             At Quickly Services, we embrace a philosophy of
                             transparency and simplicity in our pricing model.
@@ -378,15 +457,15 @@
                             customers and businesses alike.
                         </p>
                     </div>
-                    <div class="row pt-4 flex-row justify-content-center gap-0">
+                    <div class="row px-3  pt-4 flex-row justify-content-center gap-3 gap-md-0 solution-image-wrapper">
                         <img
                             src="images/easy-to-use-rbs.webp"
-                            class="d-block w-25 px-0"
-                            alt="img-1"
+                            class="d-block solution-image px-0"
+                            alt="image-1"
                         />
                         <img
                             src="images/easy-to-use-rom.webp"
-                            class="d-block w-25 px-0"
+                            class="d-block solution-image px-0"
                             alt="image-2"
                         />
                     </div>
@@ -401,14 +480,14 @@
             </section>
 
             <section class="features-section container py-5">
-                <div class="row flex-row">
+                <div class="row flex-column flex-md-row px-3">
                     <div class="col px-0">
                         <img src="images/not-pos.webp" alt="" class="w-100" />
                     </div>
                     <div
                         class="col d-flex flex-column justify-content-center align-items-start px-0 text-start feature-text-wrapper"
                     >
-                        <div class="p-5">
+                        <div class="p-md-5 p-3">
                             <h2 class="h2">Not just a POS</h2>
                             <p class="pt-3">
                                 Advanced inventory management, simple
@@ -421,11 +500,11 @@
                     </div>
                 </div>
 
-                <div class="row flex-row pt-5">
+                <div class="row flex-column flex-md-row px-3 pt-5">
                     <div
                         class="col d-flex flex-column justify-content-center align-items-start px-0 text-start feature-text-wrapper"
                     >
-                        <div class="p-5">
+                        <div class="p-md-5 p-3">
                             <h2 class="h2">
                                 Unlock the doors to new opportunities
                             </h2>
@@ -446,7 +525,7 @@
                     </div>
                 </div>
 
-                <div class="row flex-row pt-5">
+                <div class="row flex-column flex-md-row px-3 pt-5">
                     <div class="col px-0">
                         <img
                             src="images/add-value-to-your-business.webp"
@@ -457,7 +536,7 @@
                     <div
                         class="col d-flex flex-column justify-content-center align-items-start px-0 text-start feature-text-wrapper"
                     >
-                        <div class="p-5">
+                        <div class="p-md-5 p-3">
                             <h2 class="h2">Add value to your business</h2>
                             <p class="pt-3">
                                 You can serve your customers faster and better
@@ -468,11 +547,11 @@
                     </div>
                 </div>
 
-                <div class="row flex-row py-5">
+                <div class="row flex-column flex-md-row px-3 py-5">
                     <div
                         class="col d-flex flex-column justify-content-center align-items-start px-0 text-start feature-text-wrapper"
                     >
-                        <div class="p-5">
+                        <div class="p-md-5 p-3">
                             <h2 class="h2">
                                 Your business will always be with you
                             </h2>
@@ -493,7 +572,7 @@
                     </div>
                 </div>
 
-                <div class="row py-5 text-center justify-content-center">
+                <div class="row flex-column flex-md-row px-3 py-5 text-center justify-content-center">
                     <h2 class="h2">Bring your business online</h2>
                     <p class="pt-4">
                         Because of the numerous advantages and benefits, more
@@ -503,7 +582,7 @@
                         products to anyone, anywhere - online through your
                         website. Keep serving customers without missing a beat.
                     </p>
-                    <img src="images/online-shop.webp" alt="" class="w-50" />
+                    <img src="images/online-shop.webp" alt="" class="w-md-50 w-100" />
                 </div>
             </section>
 
@@ -511,7 +590,7 @@
                 <div
                     class="container py-5 d-flex align-items-center flex-column"
                 >
-                    <h2 class="h2">
+                    <h2 class="h2 text-center">
                         Make your business effortless with our efforts
                     </h2>
                     <p class="pt-4 text-center">
@@ -522,8 +601,755 @@
                     </p>
                 </div>
             </section>
+
+            <section class="crm-section container-md position-relative p-2 p-md-5 h-100">
+                <div
+                    class="crm-center-div col-7 p-md-5 p-3 text-center position-absolute start-50 top-50 translate-middle rounded-5 bg-white border-2 border-black"
+                >
+                    <h2 class="h2">Keep Your Customers Close with Our CRM</h2>
+                    <p class="pt-4">
+                        Easily build strong customer relationships and boost
+                        engagement with our user-friendly CRM. Stay connected
+                        and watch your business thrive!
+                    </p>
+                </div>
+
+                <div
+                    class="crm-random-shapes-wrapper container-md p-2 p-md-5 row justify-content-center gap-2"
+                >
+                    <div class="box box-1"></div>
+                    <div class="box box-2"></div>
+                    <div class="box box-3 shape-1"></div>
+                    <div class="box box-4"></div>
+                    <div class="box box-5 shape-2"></div>
+                    <div class="box box-6 shape-3"></div>
+                    <div class="box box-7 shape-4"></div>
+                    <div class="box box-8 shape-5"></div>
+                    <div class="box box-9 shape-1"></div>
+                    <div class="box box-10 shape-2"></div>
+                    <div class="box box-11"></div>
+                    <div class="box box-12 shape-6"></div>
+                    <div class="box box-13"></div>
+                    <div class="box box-14 shape-4"></div>
+
+                    <div class="box box-15 shape-2"></div>
+                    <div class="box box-16 shape-5"></div>
+                    <div class="box box-17"></div>
+                    <div class="box box-18 shape-1"></div>
+                    <div class="box box-19"></div>
+                    <div class="box box-20 shape-2"></div>
+                    <div class="box box-21 shape-1"></div>
+                    <div class="box box-22"></div>
+                    <div class="box box-23"></div>
+                    <div class="box box-24 shape-6"></div>
+                    <div class="box box-25 shape-2"></div>
+                    <div class="box box-26"></div>
+                    <div class="box box-27 shape-1"></div>
+                    <div class="box box-28"></div>
+
+                    <div class="box box-29"></div>
+                    <div class="box box-30"></div>
+                    <div class="box box-31"></div>
+                    <div class="box box-32"></div>
+                    <div class="box box-33"></div>
+                    <div class="box box-34 shape-4"></div>
+                    <div class="box box-35 shape-2"></div>
+                    <div class="box box-36 shape-6"></div>
+                    <div class="box box-37"></div>
+                    <div class="box box-38"></div>
+                    <div class="box box-39 shape-1"></div>
+                    <div class="box box-40 shape-2"></div>
+                    <div class="box box-41"></div>
+                    <div class="box box-42 shape-2"></div>
+
+                    <div class="box box-43 shape-6"></div>
+                    <div class="box box-44 shape-5"></div>
+                    <div class="box box-45 shape-4"></div>
+                    <div class="box box-46"></div>
+                    <div class="box box-47"></div>
+                    <div class="box box-48 shape-6"></div>
+                    <div class="box box-49 shape-4"></div>
+                    <div class="box box-50"></div>
+                    <div class="box box-51 shape-1"></div>
+                    <div class="box box-52 shape-5"></div>
+                    <div class="box box-53"></div>
+                    <div class="box box-54"></div>
+                    <div class="box box-55 shape-2"></div>
+                    <div class="box box-56 shape-7"></div>
+
+                    <div class="box box-57 shape-1"></div>
+                    <div class="box box-58"></div>
+                    <div class="box box-59"></div>
+                    <div class="box box-60 shape-2"></div>
+                    <div class="box box-61 shape-1"></div>
+                    <div class="box box-62 shape-5"></div>
+                    <div class="box box-63"></div>
+                    <div class="box box-64"></div>
+                    <div class="box box-65 shape-2"></div>
+                    <div class="box box-66 shape-7"></div>
+                    <div class="box box-67 shape-1"></div>
+                    <div class="box box-68"></div>
+                    <div class="box box-69"></div>
+                    <div class="box box-70 shape-2"></div>
+                </div>
+            </section>
+
+            <section class="pricing-section text-center py-5">
+                <div class="container">
+                    <div class="container py-5">
+                        <h2 class="h2">Quality Service at Affordable Price!</h2>
+                        <p class="pt-4">
+                            A pay as you go, subscription-based service with no
+                            initial set-up cost which makes it the optimal
+                            choice for any growing company.
+                        </p>
+                    </div>
+                    <div class="row justify-content-center gap-4">
+                        <div class="col-lg-3">
+                            <div
+                                class="card pb-2 shadow-sm"
+                                style="width: 19rem"
+                            >
+                                <img
+                                    src="images/rom-pricing-1.webp"
+                                    class="card-img-top"
+                                    alt="img-1"
+                                />
+                                <div class="card-body">
+                                    <h3 class="card-title fw-normal">
+                                        RestroGreen
+                                    </h3>
+                                    <p class="card-text py-2">Starts from</p>
+                                    <p class="card-text h4 pb-3">৳666</p>
+
+                                    <a
+                                        href="#"
+                                        class="btn btn-outline btn-restrogreen px-5 py-3"
+                                    >
+                                        Try Free
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div
+                                class="card pb-2 shadow-sm"
+                                style="width: 19rem"
+                            >
+                                <img
+                                    src="images/rbs-pricing-1.webp"
+                                    class="card-img-top"
+                                    alt="img-1"
+                                />
+                                <div class="card-body">
+                                    <h3 class="card-title fw-normal">
+                                        RetailGo
+                                    </h3>
+                                    <p class="card-text py-2">Starts from</p>
+                                    <p class="card-text h4 pb-3">৳833</p>
+
+                                    <a
+                                        href="#"
+                                        class="btn btn-outline btn-retailgo px-5 py-3"
+                                    >
+                                        Try Free
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div
+                                class="card pb-2 shadow-sm"
+                                style="width: 19rem"
+                            >
+                                <img
+                                    src="images/oneoffice-pricing.webp"
+                                    class="card-img-top"
+                                    alt="img-1"
+                                />
+                                <div class="card-body">
+                                    <h3 class="card-title fw-normal">
+                                        OneOffice
+                                    </h3>
+                                    <p class="card-text py-2">Starts from</p>
+                                    <p class="card-text h4 pb-3">৳833</p>
+
+                                    <a
+                                        href="#"
+                                        class="btn btn-outline btn-oneoffice px-5 py-3"
+                                    >
+                                        Try Free
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div
+                                class="card pb-2 shadow-sm"
+                                style="width: 19rem"
+                            >
+                                <img
+                                    src="images/locoshop-pricing.png"
+                                    class="card-img-top"
+                                    alt="img-1"
+                                />
+                                <div class="card-body">
+                                    <h3 class="card-title fw-normal">
+                                        LocoShop
+                                    </h3>
+                                    <p class="card-text py-2">Starts from</p>
+                                    <p class="card-text h4 pb-3">৳0</p>
+
+                                    <a
+                                        href="#"
+                                        class="btn btn-outline btn-locoshop px-5 py-3"
+                                    >
+                                        Try Free
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div
+                                class="card pb-2 shadow-sm"
+                                style="width: 19rem"
+                            >
+                                <img
+                                    src="images/courtsync-pricing.png"
+                                    class="card-img-top"
+                                    alt="img-1"
+                                />
+                                <div class="card-body">
+                                    <h3 class="card-title fw-normal">
+                                        CourtSync
+                                    </h3>
+                                    <p class="card-text py-2">Starts from</p>
+                                    <p class="card-text h4 pb-3">
+                                        Coming Soon!
+                                    </p>
+
+                                    <a
+                                        href="#"
+                                        class="btn btn-outline btn-courtsync px-5 py-3"
+                                    >
+                                        Try Free
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="customer-section">
+                <div class="container text-center py-5">
+                    <h2 class="h2 pt-5">Shop hardware that works for you</h2>
+                    <p class="pt-4 pb-5">
+                        To make it convenient for you, we have a one-stop-shop
+                        where you’ll find all the essential devices and
+                        accessories you may need to use Quickly.
+                    </p>
+
+                    <h2 class="h2 py-5">
+                        Some of the awesome customers that love Quickly
+                    </h2>
+
+                    <div class="row">
+                        <div
+                            id="carouselExampleControls"
+                            class="carousel slide"
+                            data-bs-ride="carousel"
+                        >
+                            <div class="d-flex justify-content-center gap-3">
+                                <div class="">
+                                    <img
+                                        src="images/logo/8th-street.png"
+                                        class="d-block customer-logo"
+                                        alt="customer-logo-1"
+                                    />
+                                </div>
+                                <div class="">
+                                    <img
+                                        src="images/logo/BurgerLab.png"
+                                        class="d-block customer-logo"
+                                        alt="customer-logo-2"
+                                    />
+                                </div>
+                                <div class="">
+                                    <img
+                                        src="images/logo/ChickenPoint.png"
+                                        class="d-block customer-logo"
+                                        alt="customer-logo-3"
+                                    />
+                                </div>
+                                <div class="">
+                                    <img
+                                        src="images/logo/HungerGarage.png"
+                                        class="d-block customer-logo"
+                                        alt="customer-logo-4"
+                                    />
+                                </div>
+                                <div class="">
+                                    <img
+                                        src="images/logo/China101.png"
+                                        class="d-block customer-logo"
+                                        alt="customer-logo-5"
+                                    />
+                                </div>
+                                <div class="">
+                                    <img
+                                        src="images/logo/Dhoa.png"
+                                        class="d-block customer-logo"
+                                        alt="customer-logo-6"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="support-center py-5">
+                        <h2 class="h2 pt-4">Quickly Support Center</h2>
+                        <p class="pt-3">
+                            We have a support portal full of information that
+                            might help you to better understand and use our
+                            software.
+                        </p>
+                        <div class="row gap-4 gap-md-0 pt-4">
+                            <div class="col-lg-3">
+                                <div class="card pt-5 pb-4 shadow-sm">
+                                    <img
+                                        src="images/logo/knowledge-base-white.png"
+                                        class="card-img-top support-icon"
+                                        alt="img-1"
+                                    />
+                                    <div class="card-body pt-4">
+                                        <h5 class="card-title pb-3">
+                                            Knowledge
+                                        </h5>
+                                        <p class="card-text">
+                                            A detailed guide of using the
+                                            product, provided with relevant
+                                            images to clarify confusions.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="card pt-5 pb-4 shadow-sm">
+                                    <img
+                                        src="images/logo/article.png"
+                                        class="card-img-top support-icon"
+                                        alt="img-1"
+                                    />
+                                    <div class="card-body pt-4">
+                                        <h5 class="card-title pb-3">Blog</h5>
+                                        <p class="card-text">
+                                            Take a look at the articles on
+                                            different topics, which might be an
+                                            interesting read for you.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="card pt-5 pb-4 shadow-sm">
+                                    <img
+                                        src="images/logo/community-white.png"
+                                        class="card-img-top support-icon"
+                                        alt="img-1"
+                                    />
+                                    <div class="card-body pt-4">
+                                        <h5 class="card-title pb-3">Forum</h5>
+                                        <p class="card-text">
+                                            In this platform, you can share
+                                            problems you are facing and discuss
+                                            it with other users too.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="card pt-5 pb-4 shadow-sm">
+                                    <img
+                                        src="images/logo/faq.png"
+                                        class="card-img-top support-icon"
+                                        alt="img-1"
+                                    />
+                                    <div class="card-body pt-4">
+                                        <h5 class="card-title pb-3">FAQ</h5>
+                                        <p class="card-text">
+                                            The answer to the most commonly
+                                            asked questions <br />can be found
+                                            here.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
-        <footer></footer>
+
+        <footer class="p-3 p-md-5">
+            <div class="row justify-content-between">
+                <div class="col-12 col-md-8 d-flex flex-wrap gap-4 justify-content-between">
+                    <ul class="list-unstyled footer-list mb-2">
+                        <li>
+                            <a
+                                href="https://quicklyservices.com"
+                                target="_blank"
+                                >Quickly</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                class="footer-list-link"
+                                href="#"
+                                >Terms &amp; Conditions</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                class="footer-list-link"
+                                href="#"
+                                >Privacy Policy</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                class="footer-list-link"
+                                href="#"
+                                >Refund Policy</a
+                            >
+                        </li>
+                        <li class="mb-3">
+                            <a
+                                class="footer-list-link"
+                                href="#"
+                                >About Us</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="#"
+                                >Help &amp; Support</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                class="footer-list-link"
+                                href="#"
+                                >Blog</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                class="footer-list-link"
+                                href="#"
+                                >Create Ticket</a
+                            >
+                        </li>
+                    </ul>
+                    <ul class="list-unstyled footer-list mb-2">
+                        <li>
+                            <a href="#"
+                                >RestroGreen</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                class="footer-list-link"
+                                href="#"
+                                >Sign Up</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                class="footer-list-link"
+                                href="#"
+                            >
+                        </li>
+                        <li>
+                            <a
+                                class="footer-list-link"
+                                href="#"
+                                >Android POS</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                class="footer-list-link"
+                                href="#"
+                                >Windows POS</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                class="footer-list-link"
+                                href="#"
+                                
+                                >Backoffice App (Android)</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                class="footer-list-link"
+                                href="#"
+                                >Backoffice App (IOS)</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                class="footer-list-link"
+                                href="#"
+                                
+                                >KDS App</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                class="footer-list-link"
+                                href="#"
+                                >Knowledge Base</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                class="footer-list-link"
+                                href="#"
+                                >Forum</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                class="footer-list-link"
+                                href="#"
+                                >FAQ</a
+                            >
+                        </li>
+                    </ul>
+                    <ul class="list-unstyled footer-list mb-2">
+                        <li>
+                            <a href="#"
+                                >RetailGo</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                class="footer-list-link"
+                                href="#"
+                                >Sign Up</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                class="footer-list-link"
+                                href="#"
+                            >
+                        </li>
+                        <li>
+                            <a
+                                class="footer-list-link"
+                                href="#"
+                                >Android POS</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                class="footer-list-link"
+                                href="#"
+                                >Windows POS</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                class="footer-list-link"
+                                href="#"
+                                >Mac POS</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                class="footer-list-link"
+                                href="#"
+                                
+                                >Backoffice App (Android)</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                class="footer-list-link"
+                                href="#"
+                                >Backoffice App (IOS)</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                class="footer-list-link"
+                                href="#"
+                                >Knowledge Base</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                class="footer-list-link"
+                                href="#"
+                                >Forum</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                class="footer-list-link"
+                                href="#"
+                                >FAQ</a
+                            >
+                        </li>
+                    </ul>
+                    <ul class="list-unstyled footer-list mb-2">
+                        <li>
+                            <a href="#"
+                                >OneOffice</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                class="footer-list-link"
+                                href="#"
+                                >Sign Up</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                class="footer-list-link"
+                                href="#"
+                            > Sign in </a>
+
+                        </li>
+                        <li>
+                            <a
+                                class="footer-list-link"
+                                href="#"
+                            > Pricing</a>
+                        </li>
+                    </ul>
+                    <ul class="list-unstyled footer-list mb-2">
+                        <li>
+                            <a href="#"
+                                >LocoShop</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                class="footer-list-link"
+                                href="#"
+                                >Sign Up</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                class="footer-list-link"
+                                href="#"
+                            > Sign in </a>
+                        </li>
+                        <li class="pt-3">
+                            <a href="#" 
+                                >CourtSync</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                class="footer-list-link"
+                                href="#"
+                                >Sign Up</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                class="footer-list-link"
+                                href="#"
+                                >Sign In</a
+                            >
+                        </li>
+                    </ul>
+                    
+                </div>
+
+                <div
+                    class="col-md-4 d-flex flex-column justify-content-between align-items-end"
+                >
+                    <ul class="contact-list list-unstyled pl-md-3">
+                        <li class="text-left text-md-right">
+                            Hal-Mars (4th Floor), 5 Shaheed Sangbadik Salina
+                            Parveen Sarak, <br />Moghbazar, Dhaka-1217,
+                            Bangladesh
+                        </li>
+                        <li class="text-left text-md-right">
+                            <span
+                                ><a href="tel:+880 2-49362894" target="_blank"
+                                    >+880 249362894</a
+                                ></span
+                            >,
+                            <span
+                                ><a href="tel:+880 1309-989340" target="_blank"
+                                    >+880 1309989340</a
+                                ></span
+                            >,
+                            <span
+                                ><a
+                                    href="mailto:support@quicklyservices.com"
+                                    target="_blank"
+                                    >info@quicklyservices.com</a
+                                ></span
+                            >
+                        </li>
+                    </ul>
+
+                    <ul
+                        class="social-links list-unstyled d-flex gap-2 justify-content-start justify-content-md-end mt-4"
+                    >
+                        <li>
+                            <a
+                                href="https://www.facebook.com/Quickly-Services-2162000340580809/"
+                                target="_blank"
+                                ><i class="fab social-icon fa-facebook pr-3"></i
+                            ></a>
+                        </li>
+                        <li>
+                            <a
+                                href="https://www.instagram.com/quicklyservices/"
+                                target="_blank"
+                                ><i
+                                    class="fab social-icon fa-instagram pr-3"
+                                ></i
+                            ></a>
+                        </li>
+                        <li>
+                            <a
+                                href="https://www.youtube.com/channel/UCBfhHHQvTlxlnyYfNyz9JjQ?view_as=subscriber"
+                                target="_blank"
+                                ><i class="fab social-icon fa-youtube pr-3"></i
+                            ></a>
+                        </li>
+                        <li>
+                            <a
+                                href="https://www.linkedin.com/company/quicklyofficial"
+                                target="_blank"
+                                ><i class="fab social-icon fa-linkedin"></i
+                            ></a>
+                        </li>
+                    </ul>
+
+                    <div class="mt-4">
+                        <p class="copyright-text text-left text-md-right">
+                            Copyright © 2025 by Quickly Services. All rights
+                            reserved.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"

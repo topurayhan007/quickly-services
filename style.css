@@ -43,7 +43,9 @@
 body {
     font-family: var(--font-inter) !important;
 }
-
+h2 {
+    font-weight: normal !important;
+}
 .nav-link:not(.login-btn):hover {
     opacity: 0.75;
 }
@@ -72,9 +74,17 @@ body {
     background-size: cover;
     transition: background-image 1s ease-in;
 }
+.carousel-inner,
 .carousel-item {
-    height: 600px;
+    width: 100%;
+    height: 100%;
 }
+.carousel-item img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
 .banner-btn {
     color: white;
     border: 1px solid white;
@@ -102,6 +112,9 @@ body {
 .solution-section {
     background-color: #f9f9f9;
 }
+.solution-image {
+    max-width: 400px;
+}
 .feature-text-wrapper {
     background-color: #fafcfb;
 }
@@ -109,4 +122,242 @@ body {
     background-color: #496165;
     padding-top: var(--size-10xl);
     padding-bottom: var(--size-10xl);
+}
+
+/* CRM Section */
+.box {
+    width: 70px;
+    height: 70px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #e8e9ed;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.shape-1 {
+    border-top-left-radius: 40px;
+}
+.shape-2 {
+    border-radius: 40px;
+}
+.shape-3 {
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+.shape-4 {
+    border-bottom-left-radius: 40px;
+}
+.shape-5 {
+    border-top-right-radius: 40px;
+}
+.shape-6 {
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+.shape-7 {
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+}
+
+.box-2,
+.box-3,
+.box-6,
+.box-8,
+.box-9,
+.box-12,
+.box-14,
+.box-16,
+.box-19,
+.box-22,
+.box-27,
+.box-28,
+.box-34,
+.box-38,
+.box-40,
+.box-45,
+.box-49,
+.box-52,
+.box-56,
+.box-58,
+.box-61,
+.box-63,
+.box-68,
+.box-69 {
+    background-color: #496165;
+}
+
+.box-2 {
+    background-image: url(images/slider/2.webp);
+}
+.box-4 {
+    background-image: url(images/slider/4.webp);
+}
+.box-6 {
+    background-image: url(images/slider/5.webp);
+}
+.box-8 {
+    background-image: url(images/slider/7.webp);
+}
+.box-10 {
+    background-image: url(images/slider/13.webp);
+}
+.box-12 {
+    background-image: url(images/slider/16.webp);
+}
+.box-15 {
+    background-image: url(images/slider/18.webp);
+}
+.box-28 {
+    background-image: url(images/slider/19.webp);
+}
+.box-30 {
+    background-image: url(images/slider/20.webp);
+}
+.box-42 {
+    background-image: url(images/slider/21.webp);
+}
+.box-43 {
+    background-image: url(images/slider/24.webp);
+}
+.box-55 {
+    background-image: url(images/slider/25.webp);
+}
+.box-59 {
+    background-image: url(images/slider/29.webp);
+}
+.box-62 {
+    background-image: url(images/slider/30.webp);
+}
+.box-65 {
+    background-image: url(images/slider/32.webp);
+}
+.box-67 {
+    background-image: url(images/slider/31.webp);
+}
+.box-70 {
+    background-image: url(images/slider/35.webp);
+}
+
+/* Pricing Section */
+.pricing-section {
+    background-color: #f9f9f9;
+}
+.btn-pricing {
+    padding: 12px 40px !important;
+}
+.btn-restrogreen {
+    color: #00897b;
+    border: 1px solid #00897b;
+}
+.btn-restrogreen:hover {
+    background-color: #00897b;
+    color: white;
+}
+.btn-retailgo {
+    color: #003a72;
+    border: 1px solid #003a72;
+}
+.btn-retailgo:hover {
+    background-color: #003a72;
+    color: white;
+}
+.btn-oneoffice {
+    color: #512888;
+    border: 1px solid #512888;
+}
+.btn-oneoffice:hover {
+    background-color: #512888;
+    color: white;
+}
+.btn-locoshop {
+    color: #4b722d;
+    border: 1px solid #4b722d;
+}
+.btn-locoshop:hover {
+    background-color: #4b722d;
+    color: white;
+}
+.btn-courtsync {
+    color: #60100b;
+    border: 1px solid #60100b;
+}
+.btn-courtsync:hover {
+    background-color: #60100b;
+    color: white;
+}
+
+/* Customer Section */
+.customer-section .carousel img {
+    width: 184px !important;
+    height: max-content;
+    background-color: #f3f9fd;
+    padding: 10px;
+}
+.support-icon {
+    width: 60px;
+    margin: auto;
+}
+.support-center .col-lg-3:nth-child(1) .card {
+    background-color: #4caf50;
+    color: white;
+}
+.support-center .col-lg-3:nth-child(3) .card {
+    background-color: #3f51b5;
+    color: white;
+}
+
+/* Footer */
+footer {
+    background-color: black;
+}
+.footer-list li a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.356);
+    font-size: 14px;
+}
+.footer-list-link {
+    text-decoration: none;
+    font-size: 12px !important;
+}
+
+.footer-list li a:hover {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.contact-list li,
+.contact-list li a {
+    color: rgba(255, 255, 255, 0.356);
+    font-size: 12px;
+}
+.social-icon {
+    color: rgba(255, 255, 255, 0.356);
+}
+.social-icon:hover {
+    color: rgba(255, 255, 255, 0.7);
+}
+.copyright-text {
+    color: rgba(255, 255, 255, 0.356);
+    font-size: 12px;
+}
+
+@media only screen and (max-width: 576px) {
+    .banner {
+        height: 100% !important;
+    }
+    .customer-section .carousel img {
+        width: 100% !important;
+        padding: 5px;
+    }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 767px) {
+    .banner {
+        height: 100% !important;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .banner {
+        height: 385px !important;
+    }
 }
